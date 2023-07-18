@@ -22,6 +22,16 @@
             <input type="email" name="email">
         </div>
 
+        <div>
+            <label for="gender">Gender:</label>
+            <input type="text" name="gender">
+        </div>
+
+        <div>
+            <label for="date">Date of birth:</label>
+            <input type="date" name="date">
+        </div>
+
         <button type="submit">Submit</button>
     </form>
 </body>
