@@ -2,7 +2,7 @@
 <?php
     $server = 'localhost'; // 127.0.0.1
     $username = 'root';
-    $password = 'rootroot';
+    $password = '';
     $db = 'csc309';
 
     // Open a new connection
@@ -26,7 +26,7 @@
         
         while($row = $result->fetch_assoc()){
             echo $row['id'] . ' ' . $row['firstname'] . ' ' . $row['lastname'] . 
-            ' ' .$row['email'] . '<br>';
+            ' ' .$row['email']. ' ' .$row['gender']. ' ' .$row['date_of_birth'] .'<br>';
         }
 
     } else {
