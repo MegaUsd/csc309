@@ -2,7 +2,7 @@
 <?php
     $server = 'localhost'; // 127.0.0.1
     $username = 'root';
-    $password = 'rootroot';
+    $password = ' ';
     $db = 'csc309';
 
     // Open a new connection
@@ -14,7 +14,7 @@
     }
 
     // Query
-    $sql = "DELETE FROM users WHERE id = 3";
+    $sql = "DELETE FROM users WHERE id = 2";
 
     $result = $con->query($sql);
 
