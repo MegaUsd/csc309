@@ -2,7 +2,7 @@
 <?php
     $server = 'localhost'; // 127.0.0.1
     $username = 'root';
-    $password = 'rootroot';
+    $password = '';
 
     // Open a new connection
     $con = new mysqli($server, $username, $password);
@@ -11,9 +11,11 @@
     if ($con->connect_error){
         die("Connection failed: " . $con->connect_error);
     }
+ 
+
 
     // Create Database
-    $sql = 'CREATE DATABASE csc309';
+   $sql = 'CREATE DATABASE csc309';
 
     $result = $con->query($sql);
 
